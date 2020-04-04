@@ -1,0 +1,14 @@
+#Locators for Sign_up Page
+email=CSS###email
+password=CSS###pass
+day=XPATH##//select[@name='birthday_day']
+month=XPATH##//select[@name='birthday_month']
+year=XPATH##//select[@name='birthday_year']
+last_name=XPATH##//input[@name='last_name']
+first_name=XPATH##//input[@name='first_name']
+mobile-email=XPATH##//input[@name='reg_email__']
+female=XPATH##//label[contains(text(),'Female')]/preceding-sibling::input
+male=XPATH##//label[contains(text(),'Male')]/preceding-sibling::input
+custom=XPATH##//label[contains(text(),'Custom')]/preceding-sibling::input
+
+#Locators for Profile Page
