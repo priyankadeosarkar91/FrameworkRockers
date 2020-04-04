@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35981" started-at="2020-04-04T13:39:06Z" finished-at="2020-04-04T13:39:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35981" started-at="2020-04-04T13:39:06Z" finished-at="2020-04-04T13:39:42Z">
+      <class name="com.testpractice.test2">
+        <test-method status="PASS" signature="tc_001()[pri:0, instance:com.testpractice.test2@df27fae]" name="tc_001" duration-ms="9304" started-at="2020-04-04T13:39:06Z" description="VerifyBrowser : Chrome" finished-at="2020-04-04T13:39:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_001 -->
+        <test-method status="PASS" signature="tc_002()[pri:0, instance:com.testpractice.test2@df27fae]" name="tc_002" duration-ms="16568" started-at="2020-04-04T13:39:15Z" description="VerifyURL :&#039;https://www.redbus.in/&#039;" finished-at="2020-04-04T13:39:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_002 -->
+        <test-method status="PASS" signature="tc_010()[pri:0, instance:com.testpractice.test2@df27fae]" name="tc_010" duration-ms="2369" started-at="2020-04-04T13:39:32Z" description="VerifyElementToBeClickable  : rpool" finished-at="2020-04-04T13:39:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_010 -->
+        <test-method status="PASS" signature="tc_011()[pri:0, instance:com.testpractice.test2@df27fae]" name="tc_011" duration-ms="7643" started-at="2020-04-04T13:39:34Z" description="VerifyWindowHandle : perform action on new window &gt;&gt; close pop up" finished-at="2020-04-04T13:39:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_011 -->
+      </class> <!-- com.testpractice.test2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
