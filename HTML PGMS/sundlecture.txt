@@ -1,0 +1,14 @@
+1.ElementclickInterceptedException:-REmove all obstacles if it occurs just click on empty space.
+2.ElementNotInteractableException:-we cant interact with exception
+Functions of XPATH:-
+a>.text():-anchor link text having text,button,it is avail only on text.
+text are such as<a class="A">Login </a> TD is having text the tags which are having text .
+ex:-//a[text()="click here"].
+*@ is requird only for attributes.
+b>contains():-it checks partial match.it is avail on text,attributes.it check substrings
+ex:-//a[contains(text(),"click)]
+on attribute:-a[contains(@class,"classA")].
+c>starts-with():-it will work with text or attributes.
+ex:-//a[starts-with(@href,"https"].
+    //a[starts-with(text(),"click here"].
+d>.ends-with(): it works with text attributes.it is depricated it is not in use.

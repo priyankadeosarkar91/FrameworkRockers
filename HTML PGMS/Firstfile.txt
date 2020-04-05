@@ -1,0 +1,17 @@
+<HTML>
+      <TITLE>FIRST PAGE</TITLE>
+<Body>
+  Username:-<input type="text">
+  Password:-<input type="password">
+  ok:-<input type="click">
+  <button onclick="myfunction()"click me"></button>
+   <script>
+   <function myfunction()
+   {
+    var name=document.getElementById("User").value;
+    alert("Hello"+name+"/n welcome to testing shastra");
+   }
+ </script>
+<label>Your name</label>
+</Body>
+</HTML>

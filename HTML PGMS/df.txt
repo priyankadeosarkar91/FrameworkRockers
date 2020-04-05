@@ -1,0 +1,114 @@
+import static org.junit.Assert.*;
+2
+import java.util.concurrent.TimeUnit;
+3
+import org.junit.After;
+4
+import org.junit.Before;
+5
+import org.junit.Test;
+6
+import org.openqa.selenium.By;
+7
+import org.openqa.selenium.WebDriver;
+8
+import org.openqa.selenium.WebElement;
+9
+import org.openqa.selenium.firefox.FirefoxDriver;
+10
+import org.openqa.selenium.support.ui.ExpectedConditions;
+11
+import org.openqa.selenium.support.ui.WebDriverWait;
+12
+ 
+13
+public class Wait_Demonstration {
+14
+ 
+15
+       // created reference variable for WebDriver
+16
+       WebDriver drv;
+17
+       @Before
+18
+       public void setup() throws InterruptedException {
+19
+ 
+20
+              // initializing drv variable using FirefoxDriver
+21
+              drv=new FirefoxDriver();
+22
+              // launching gmail.com on the browser
+23
+              drv.get("https://gmail.com");
+24
+              // maximized the browser window
+25
+              drv.manage().window().maximize();
+26
+              drv.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+27
+       }
+28
+ 
+29
+       @Test
+30
+       public void test() throws InterruptedException {
+31
+ 
+32
+              // saving the GUI element reference into a "username" variable of WebElement type
+33
+              WebElement username = drv.findElement(By.id("Email"));
+34
+ 
+35
+              // entering username
+36
+              username.sendKeys("shruti.shrivastava.in");
+37
+ 
+38
+              // entering password
+39
+              drv.findElement(By.id("Passwd")).sendKeys("password");
+40
+ 
+41
+              // clicking signin button
+42
+              drv.findElement(By.id("signIn")).click();
+43
+ 
+44
+              // explicit wait - to wait for the compose button to be click-able
+45
+              WebDriverWait wait = new WebDriverWait(drv,30);
+46
+ 
+47
+         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));
+48
+              // click on the compose button as soon as the "compose" button is visible
+49
+       drv.findElement(By.xpath("//div[contains(text(),'COMPOSE')]")).click();
+50
+       }
+51
+ 
+52
+       @After
+53
+       public void teardown() {
+54
+       // closes all the browser windows opened by web driver
+55
+   drv.quit();     
+56
+       }
+57
+}
+Import 

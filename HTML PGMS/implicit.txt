@@ -1,0 +1,32 @@
+package Edureka;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;importorg.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;importorg.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;  
+ publicclassLocators {
+publicstaticvoidmain(String[] args) throwsInterruptedException {
+System.setProperty("webdriver.chrome.driver", "C:\\Selenium-java-edureka\\chromedriver_win32\\chromedriver.exe");
+WebDriver driver = newChromeDriver();
+driver.manage().window().maximize();
+driver.manage().deleteAllCookies();
+driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+driver.get("https://www.facebook.com/");
+WebElement firstname= driver.findElement(By.name("firstname"));
+WebElement lastname= driver.findElement(By.name("lastname"));
+sendKeys(driver, firstname, 10, "Edureka");
+sendKeys(driver, lastname, 20, "Edureka");
+WebElement forgotAccount= driver.findElement(By.linkText("Forgotten account?"));
+clickOn(driver,forgotAccount, 10);
+driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+}
+publicstaticvoidsendKeys(WebDriver driver1, WebElement element, inttimeout, String value){
+newWebDriverWait(driver1, timeout).until(ExpectedConditions.visibilityOf(element));
+element.sendKeys(value);}
+publicstaticvoidclickOn(WebDriver driver1, WebElement element, inttimeout){
+newWebDriverWait(driver1, timeout).until(ExpectedConditions.elementToBeClickable(element));
+element.click();}}</pre><pre>
+
+
+In the above example, I used the Facebook sign-up credentials and located them using name locators. Furthermore, I have created a utility or one generic function that will be available for all elements to pr
