@@ -1,12 +1,11 @@
-package com.hybridframework.pages;
+package PageModel;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-import com.hybridframework.keywords.Constants;
-
-
+import com.Utilities.Constants;
 
 public class SignInPage {
 	@FindBy(css ="a#nav-link-accountList")
@@ -24,6 +23,12 @@ public class SignInPage {
 	@FindBy(css ="input#signInSubmit")
 	static WebElement login_btn;
 	
+	@FindBy(id ="continue")
+	static WebElement authentication;
+	
+	@FindBy( xpath="/html/body/div[1]/div[2]/div/div/div/div/div/div[1]/form/div[4]/span/span/input")
+	static WebElement authentication_login;
+	
 	public void mousehoverOnSignInTab() {
 		Constants.action=new Actions(Constants.driver);
 		Constants.action.moveToElement(signintab_Mhover).perform();
@@ -38,7 +43,6 @@ public class SignInPage {
 	}
 	
 	public void enterUsername(String value) {
-		username_tb.click();
 		username_tb.sendKeys(value);
 	}
 
@@ -51,7 +55,6 @@ public class SignInPage {
 	}
 	
 	public void enterPassword(String value) {
-		password_tb.click();
 		password_tb.sendKeys(value);
 	}
 	
@@ -59,5 +62,19 @@ public class SignInPage {
 		login_btn.click();
 	}
 	
-
+	public void clickforAuthentication() {
+		authentication.click();
+	}
+	
+	public void clickOnContinueForAuthentication() {
+		authentication_login.click();
+	}
+	
+	
 }
+		
+
+
+
+
+
