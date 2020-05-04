@@ -17,6 +17,24 @@ public class CustomerservicePage{
 
 	@FindBy(xpath = "//input[@class=\"a-button-input\"]")
 	static WebElement go_tab;
+	
+//	@FindBy(xpath = "//a[contains(text(),'Customer Service')]")
+//	static WebElement customerservice_tab;
+
+	@FindBy(xpath = "//input[@type=\"search\"]")
+	static WebElement find_moresolutions_tab;
+
+	public void selectService() {
+		customerservice_tab.click();
+	}
+
+	public void findmoreSolutions(String value) {
+		find_moresolutions_tab.sendKeys(value);
+	}
+
+	public void searchGo() {
+		go_tab.click();
+	}
 
 	public void clickOnCustomerService() {
 		Constants.action = new Actions(Constants.driver);
