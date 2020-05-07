@@ -1,0 +1,18 @@
+2020-04-29 23:21:35 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Hp\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
+2020-04-29 23:47:40 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Hp\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
+2020-04-29 23:47:48 INFO  Logs:66 - ******************Check Customer ServiceDetails********************
+2020-04-29 23:47:50 INFO  Logs:81 - *********************Amazon Pay Details************************
+2020-04-29 23:48:00 INFO  Logs:88 - *******************Birthday Card successfully selected**************************
+2020-04-29 23:48:00 INFO  Logs:47 - ******************HomePage Verification*******************************
+2020-04-29 23:48:05 INFO  Logs:61 - ***********************Return to Homepage*********************
+2020-04-29 23:48:05 INFO  Logs:30 - *****************************SignIn ********************************
+2020-04-29 23:49:01 INFO  Logs:42 - **********************SignIn Successful*******************
+2020-05-02 16:28:53 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Hp\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
+2020-05-02 16:29:08 INFO  Logs:68 - ******************Check Customer ServiceDetails********************
+2020-05-02 16:29:14 INFO  Logs:83 - *********************Amazon Pay Details************************
+2020-05-02 16:29:20 INFO  Logs:90 - *******************Birthday Card successfully selected**************************
+2020-05-02 16:29:20 INFO  Logs:49 - ******************HomePage Verification*******************************
+2020-05-02 16:29:25 INFO  Logs:63 - ***********************Return to Homepage*********************
+2020-05-02 16:29:25 INFO  Logs:32 - *****************************SignIn ********************************
+2020-05-02 16:30:20 INFO  Logs:44 - **********************SignIn Successful*******************
+2020-05-05 18:10:58 INFO  WebDriverManager:1078 - Exporting webdriver.chrome.driver as C:\Users\Hp\.m2\repository\webdriver\chromedriver\win32\81.0.4044.69\chromedriver.exe
